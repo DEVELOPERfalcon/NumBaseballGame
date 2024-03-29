@@ -2,6 +2,7 @@ package kr.co.taksoft.numbaseballgame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         btn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 if(et1.getText().toString().length()==1 && et2.getText().toString().length()==1 && et3.getText().toString().length()==1){
